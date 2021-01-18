@@ -1,10 +1,11 @@
 # Getting Started
 
-### Reference Documentation
+## Using ApplicationArguments
 
-For further reference, please consider the following sections:
+### run with parameters
+java ... ml.pevgen.springboot2practice.SpringBoot2PracticeApplication nonoptarg1 --mydebug=true nonoptarg2
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.4.2/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.4.2/maven-plugin/reference/html/#build-image)
+### result
+mydebug: [true]
 
+files: [[nonoptarg1, nonoptarg2]]
