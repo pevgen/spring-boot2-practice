@@ -1,5 +1,10 @@
 # Getting Started
 
+## Simple example of spring boot _own_ starter
+
+Subproject: starter-example-1
+
+
 ## Using ApplicationArguments
 
 ### run with parameters

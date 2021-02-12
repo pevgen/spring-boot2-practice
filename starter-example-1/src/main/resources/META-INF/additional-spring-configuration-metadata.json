@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "name": "example.name",
+      "type": "java.lang.String",
+      "description": "Example of meta description.",
+      "sourceType": "ml.pevgen.springboot2practice.starterexample1.SimplestProperties"
+    }
+  ]
+}
