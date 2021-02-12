@@ -8,20 +8,25 @@
         <version>2.4.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>ml.pevgen</groupId>
-    <artifactId>spring-boot2-practice</artifactId>
+    <groupId>ml.pevgen.springboot2practice</groupId>
+    <artifactId>starter-example-1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot2-practice</name>
-    <description>Demo project for Spring Boot 2</description>
-
+    <name>starter-example-1</name>
+    <description>Example of spring starter</description>
     <properties>
         <java.version>11</java.version>
     </properties>
-
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -29,19 +34,12 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>ml.pevgen.springboot2practice</groupId>
-            <artifactId>starter-example-1</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-test</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
     </dependencies>
-
 
     <build>
         <plugins>
@@ -49,6 +47,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <skip>true</skip>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
